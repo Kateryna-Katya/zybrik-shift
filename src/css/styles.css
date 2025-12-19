@@ -717,3 +717,41 @@ a {
         padding: 25px;
     }
 }
+/* DISCLAIMER SPECIFIC */
+.warning-box {
+  padding: 25px;
+  background: rgba(212, 255, 0, 0.1);
+  border: 1px dashed var(--color-primary);
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+.warning-box strong {
+  color: var(--color-primary);
+}
+
+.legal-section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.legal-section h2 {
+  font-size: 1.2rem !important;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.footer-note {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+/* Эффект для ссылок в тексте */
+.content-block strong {
+  font-weight: 600;
+  color: #fff;
+}
