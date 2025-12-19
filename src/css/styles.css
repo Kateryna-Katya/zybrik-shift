@@ -613,3 +613,107 @@ a {
         order: -1;
     }
 }
+/* LEGAL PAGES STYLING */
+.pages {
+    padding: 160px 0 100px;
+    background-color: var(--color-bg);
+}
+
+.breadcrumb {
+    font-family: var(--font-accent);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.page-title {
+    font-family: var(--font-accent);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 50px;
+    border-left: 8px solid var(--color-primary);
+    padding-left: 25px;
+}
+
+.text-accent {
+    color: var(--color-primary);
+}
+
+.content-block {
+    max-width: 800px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content-block h2 {
+    font-family: var(--font-accent);
+    color: #fff;
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.content-block p {
+    margin-bottom: 20px;
+}
+
+/* Стилизация списков */
+.styled-list {
+    margin: 30px 0;
+    padding-left: 0;
+}
+
+.styled-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.styled-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 15px;
+    height: 2px;
+    background: var(--color-primary);
+}
+
+.styled-list strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Блок контактов в тексте */
+.contact-box {
+    margin-top: 60px;
+    padding: 40px;
+    background: var(--color-surface);
+    border: 1px solid rgba(212, 255, 0, 0.2);
+}
+
+.email-link {
+    font-family: var(--font-accent);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.email-link:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .contact-box {
+        padding: 25px;
+    }
+}
