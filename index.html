@@ -1,56 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/zybrik-shift/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zybrik Shift — IT-школа нового поколения</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/zybrik-shift/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zybrik-shift/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/zybrik-shift/assets/styles-6lv1-YO_.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__text">Zybrik</span><span class="logo__dot">.</span><span class="logo__sub">Shift</span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#courses" class="nav__link">Обучение</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#career" class="nav__link">Карьера</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--header">Связаться</a>
+
+    <button class="burger" id="burger-btn">
+      <span></span>
+    </button>
   </div>
 </header>
-
+<div class="mobile-nav" id="mobile-nav">
+  <ul class="mobile-nav__list">
+    <li><a href="#" class="mobile-nav__link">Главная</a></li>
+    <li><a href="#courses" class="mobile-nav__link">Обучение</a></li>
+    <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+    <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+    <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="hero__badge">Платформа года в Европе</span>
+            <h1 class="hero__title" id="hero-title">Технологии нового поколения для вашего будущего</h1>
+            <p class="hero__subtitle">Инновационная IT-школа Zybrik Shift. Постройте карьеру, которая работает на вас,
+                используя AI-инструменты для реальных задач.</p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#courses" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+        <div class="hero__viz">
+            <div class="hero__circle"></div>
+            <div class="hero__box"></div>
+        </div>
+    </div>
+</section>
+
+<section class="desc" id="courses">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Переосмыслите подход к развитию</h2>
+            <p class="section-subtitle">Платформа уже доступна в Европе. Мы создали среду, где теория встречается с
+                передовой цифровой инфраструктурой.</p>
+        </div>
+        <div class="desc__grid">
+            <div class="desc__card">
+                <h3>01. Простой старт</h3>
+                <p>Легко разобраться без опыта. Пошаговый путь, понятный каждому, от основ до Senior-разработчика.</p>
+            </div>
+            <div class="desc__card active">
+                <h3>02. AI-интеграция</h3>
+                <p>Решения, которые меняют правила игры. Обучаем использованию нейросетей в реальном кодинге.</p>
+            </div>
+            <div class="desc__card">
+                <h3>03. Пассивный доход</h3>
+                <p>Стратегия роста на базе инноваций. Помогаем монетизировать ваши навыки через современные платформы.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__wrapper">
+            <div class="innovations__info">
+                <h2 class="section-title">Технологии, которые работают на вас</h2>
+                <p>Предложение активно только в странах ЕС. Получите доступ к эксклюзивным методологиям, доказавшим свою
+                    эффективность.</p>
+                <ul class="innovations__list">
+                    <li><i data-lucide="check-circle"></i> Подключение занимает 2 минуты</li>
+                    <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+                    <li><i data-lucide="check-circle"></i> Практики, применимые уже сегодня</li>
+                </ul>
+            </div>
+            <div class="innovations__image">
+                <img src="img/placeholder.png" alt="Innovation">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <p class="section-subtitle">Решения, которые меняют правила игры в образовании.</p>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Быстрый старт</h3>
+                <p>Программа построена так, чтобы вы получили первые результаты уже через 2 недели обучения.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Европейский диплом</h3>
+                <p>Наши сертификаты котируются в Италии и по всей территории ЕС.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="cpu"></i></div>
+                <h3>AI-инструментарий</h3>
+                <p>Мы не просто учим кодить, мы учим управлять искусственным интеллектом для ускорения разработки.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="users"></i></div>
+                <h3>Комьюнити</h3>
+                <p>Доступ к закрытому клубу выпускников, работающих в топовых техно-хабах Европы.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="career" id="career">
+    <div class="container career__wrapper">
+        <div class="career__content">
+            <h2 class="section-title">Постройте карьеру, которая работает на вас</h2>
+            <p>Мы не просто даем знания, мы обеспечиваем ваш вход в IT-индустрию Италии и Германии. 85% наших студентов
+                находят работу еще до окончания курса.</p>
+            <div class="career__stats">
+                <div class="stat-item">
+                    <span class="stat-item__num">€35k+</span>
+                    <span class="stat-item__label">Начальная зарплата</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__num">120+</span>
+                    <span class="stat-item__label">Компаний-партнеров</span>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn--primary">Оценить перспективы</a>
+        </div>
+        <div class="career__image-box">
+            <div class="career__overlay-text">Zybrik.Shift Career Center</div>
+            <img src="img/placeholder.png" alt="Career path">
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__box">
+            <div class="contact__form-side">
+                <h2 class="section-title">Бесплатная консультация</h2>
+                <p>Запросите доступ к платформе и оцените перспективы проекта уже сегодня.</p>
+
+                <form class="form" id="main-form">
+                    <div class="form__group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="phone-input" placeholder="Телефон (только цифры)" required>
+                    </div>
+                    <div class="form__group">
+                        <div class="captcha">
+                            <span id="captcha-text">2 + 5 = </span>
+                            <input type="number" id="captcha-input" placeholder="?" required>
+                        </div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>Согласен с политикой обработки данных</span>
+                    </label>
+                    <button type="submit" class="btn btn--submit">Пройти регистрацию</button>
+                    <div id="form-message" class="form__message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo logo--footer">
+        <span class="logo__text">Zybrik</span><span class="logo__sub">Shift</span>
       </a>
-    </p>
+      <p class="footer__description">
+        Технологии, которые работают на вас. Переосмыслите подход к развитию в цифровой среде.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">Главная</a></li>
+        <li><a href="#courses" class="footer__link">Курсы</a></li>
+        <li><a href="#benefits" class="footer__link">Преимущества</a></li>
+        <li><a href="#innovations" class="footer__link">Инновации</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookies Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+        <li><a href="return.html" class="footer__link">Return Policy</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <i data-lucide="phone" class="footer__icon"></i>
+          <a href="tel:+493012345678" class="footer__link">+49 30 1234-5678</a>
+        </li>
+        <li>
+          <i data-lucide="mail" class="footer__icon"></i>
+          <a href="mailto:hello@zybrik-shift.org" class="footer__link">hello@zybrik-shift.org</a>
+        </li>
+        <li>
+          <i data-lucide="map-pin" class="footer__icon"></i>
+          <span>Friedrichstraße 176, 10117 Berlin, Germany</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Zybrik Shift. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
